@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap');
+*{ 
+    margin:0;
+    padding:0;
+}
+
+body{ 
+    position:relative;
+    width: 1440px;
+    height: 1024px;
+    background: #F3F5FC;
+}
+
+#imagem-logo-principal{
+    margin: 40px 0 0 40px; 
+}
+
+.area-texto-entrada{  
+    display: inline-block;
+    margin: 80px 60px 0 240px;
+}
+
+#texto{ 
+    font-size: 32px;
+    letter-spacing: 1px;
+    padding: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 48px;
+    color: #0A3871;
+}
+
+textarea{ 
+    background: #F3F5FC;
+    border: none;  ;
+    width: 680px;
+    height: 580px;
+    resize: none;
+    padding: 0px;
+    
+}
+
+::placeholder{
+    font-family: 'Inter', sans-serif;
+    color:blue; 
+    font-size: 40px;
+}
+
+#alerta{ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    position: absolute;
+    width: 252px;
+    height: 18px;
+    left: 240px;
+    top: 851px
+}
+#texto-alerta{ 
+    width: 380px;
+    height: 18px;
+
+    font-family: 'Inter', sans-serif;
+    color: #495057; 
+    opacity: 0.8;
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.botoes{ 
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    position:absolute; 
+    width: 680px;
+    height: 67px;
+    left: 240px;
+    top: 885px;
+    bottom: 72px;
+}
+
+.criptografa{ 
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    background-color: #0A3871;
+    color: #FFFFFF;
+    border-radius: 24px; 
+    border: none;
+    padding: 24px;
+    width: 328px;
+    height: 67px ;
+}
+
+.descriptografa{ 
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    background-color:#D8DFE8;
+    color:#0A3871; 
+
+    border: solid 1px #0A3871;
+    border-radius: 24px;
+
+    padding: 24px;
+    width: 328px;
+    height: 67px;
+}
+.limpa{     
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    background-color: #CC0022;
+    color: #D8DFE8;
+
+    border-radius: 24px;
+
+    padding: 24px;
+    width: 164px;
+    height: 67px;
+}
+
+#output{ 
+    display: none;
+    position: absolute; 
+    width: 336px;
+    height: 781px;
+
+    margin: 32px 32px 131px 32px;
+    position: absolute;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #495057;
+    display: inline-block;
+}
+
+.retangulo-lateral-resultado{ 
+    position: absolute;
+    width: 400px ; 
+    height: 944px;
+    left: 1000px;
+    top: 40px;  
+
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 08);
+    border-radius: 32px;
+}
+
+#conteudo-retangulo-lateral{ 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px; 
+
+    position:absolute; 
+    width: 336px ;
+    height: 458px;
+
+    top: 243px;
+    left: 32px; 
+}
+
+#imagem-retangulo{
+    width: 336px;
+    height: 304px;  
+    margin-bottom: 16px;
+    
+}
+
+#conteudo-retangulo-lateral h2{
+    width: 336px;
+    height: 58px;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+
+    color: #343A40;
+    text-align: center;
+    font-family: 'Inter', sans-serif;   
+    
+}
+
+#conteudo-retangulo-lateral p{ 
+    width: 336px;
+    height: 48px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+
+    color: #495057;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+#botao-copiar{ 
+    display: none;
+    position: absolute;
+    top: 845px;
+    left: 32px;
+
+    width: 336px;
+    height: 67px ;
+    padding: 24px;
+    border: none;
+
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;
+}
+
+.rodape{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute ;
+    width: 1440px;
+    height: 50px;
+    background-color: #CED4DA;  
+    top: 1000px;
+}
+
+#texto-copy-rodape{
+    display: inline-block;
+    margin: 20px 0 20px 0px;
+    text-align: center;
+}
+#icons-rodape{
+    margin: 15px;
+    padding: 8px;
+    position: relative;
+}
+
+#icons-rodape img{ 
+    width: 40px;
+    height: 40px;      
+}

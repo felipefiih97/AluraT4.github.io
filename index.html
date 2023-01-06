@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="folhadeestilo.css" />
+    <script src="challenge-back.js" defer></script>
+    <title>Desafio-Alura-Decoficador</title>
+</head>
+
+<body>
+    <header>
+        <div> <img id="imagem-logo-principal" src="imgs/logo-alura.svg" alt="imagem-logo-alura-svg" /> </div>
+    </header>
+    <main>
+        <div class="area-texto-entrada">
+            <textarea id="texto" name="textarea" rows="20" cols="50" placeholder="Digite seu texto" required
+                autofocus> </textarea>
+        </div>
+
+        <div id="alerta">
+            <img id="img-exclama" src="imgs/bola-exclamacao.svg" alt="imagem-bola-exclamação" />
+            <p id="texto-alerta"> Apenas letras minúsculas e sem acento.</p>
+        </div>
+
+        <div class="botoes">
+            <button class="criptografa" onclick="criptografa()">Criptografar</button>
+            <button class="descriptografa" onclick="descriptografa()">Descriptografa</button>
+            <button class="limpa" onclick="limpar()"> Limpar </button>
+        </div>
+
+        <div class="retangulo-lateral-resultado">
+            <div id="output">
+            </div>
+
+            <div id="conteudo-retangulo-lateral">
+                <img id="imagem-retangulo" src="imgs/High quality products 1 1.svg" alt="imagem-svg" />
+                <h2>Nenhuma mensagem encontrada.</h2>
+                <p> Digite o texto que você deseja criptografar ou descriptografar</p>
+            </div>
+            <button id="botao-copiar" onclick="copy()">Copiar</button>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <p id="texto-copy-rodape">Copyright ©2023 <a href="https://github.com/felipefiih97">Felipe Barros</a> </p>
+
+        <div id="icons-rodape">
+            <a href="https://github.com/felipefiih97"><img src="imgs/github.svg" /> </a>
+            <a href="https://twitter.com/Felipe_fiihco"><img src="imgs/twitter.svg" /></a>
+            <a href=""><img src="imgs/phone.svg" /></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
